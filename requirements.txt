@@ -17,3 +17,5 @@ Flask
 Flask-Cors
 gdown
 -e .
+
+#exception if you get error and Ctrl+Shift+P → Python: Select Interpreter and Choose: kidney (Python 3.10.18) pip install ensure==1.0.2 python-box==6.0.2
