@@ -1,39 +1,29 @@
-from setuptools import setup, find_packages
+import setuptools
 
-setup(
-    name="Kidney_Disease_Classification_Deep_Learning_Project",
-    version="0.0.1",
-    author="Your Name",
-    author_email="your.email@example.com",
-    description="Deep Learning Project for Kidney Disease Classification",
-    long_description=open("Readme.md").read(),
-    long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/kidney-disease-classification",  # optional
+with open("README.md", "r", encoding="utf-8") as f:
+    long_description = f.read()
+
+
+__version__ = "0.0.0"
+
+REPO_NAME = "Kidney-Disease-Classification-Deep-Learning-Project"
+AUTHOR_USER_NAME = "SunnyPanchani"
+SRC_REPO = "cnnClassifier"
+AUTHOR_EMAIL = "sunnypanchani9007@gmail.com"
+
+
+setuptools.setup(
+    name=SRC_REPO,
+    version=__version__,
+    author=AUTHOR_USER_NAME,
+    author_email=AUTHOR_EMAIL,
+    description="A small python package for CNN app",
+    long_description=long_description,
+    long_description_content="text/markdown",
+    url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
     project_urls={
-        "Bug Tracker": "https://github.com/yourusername/kidney-disease-classification/issues",
+        "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
     },
     package_dir={"": "src"},
-    packages=find_packages(where="src"),
-    include_package_data=True,
-    install_requires=[
-        "tensorflow==2.12.0",
-        "pandas",
-        "dvc",
-        "mlflow==2.2.2",
-        "notebook",
-        "numpy",
-        "matplotlib",
-        "seaborn",
-        "python-box==6.0.2",
-        "pyYAML",
-        "tqdm",
-        "ensure==1.0.2",
-        "joblib",
-        "types-PyYAML",
-        "scipy",
-        "Flask",
-        "Flask-Cors",
-        "gdown"
-    ],
-    python_requires=">=3.10",
+    packages=setuptools.find_packages(where="src")
 )

@@ -6,7 +6,7 @@ Home-page: https://github.com/yourusername/kidney-disease-classification
 Author: Your Name
 Author-email: your.email@example.com
 Project-URL: Bug Tracker, https://github.com/yourusername/kidney-disease-classification/issues
-Requires-Python: >=3.10
+Requires-Python: >=3.10.18
 Description-Content-Type: text/markdown
 Requires-Dist: tensorflow==2.12.0
 Requires-Dist: pandas
