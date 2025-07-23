@@ -21,3 +21,129 @@
 [2025-07-23 18:04:36,875: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<
 
 x==========x]
+[2025-07-23 18:33:53,641: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-23 18:33:53,646: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-23 18:33:53,648: INFO: common: created directory at: artifacts]
+[2025-07-23 18:33:53,650: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-07-23 18:34:06,246: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-07-23 18:54:01,453: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-07-23 18:54:01,459: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-23 18:54:01,467: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-23 18:54:01,469: INFO: common: created directory at: artifacts]
+[2025-07-23 18:54:01,470: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-07-23 18:54:01,471: ERROR: main: DataIngestionConfig.__init__() got an unexpected keyword argument 'source_URL']
+Traceback (most recent call last):
+  File "D:\code\Ai-engineer-project-microsoft\New folder\Project\All Project\6-a-Kidney-Disease-Classification-Deep-Learning-Project\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 11, in <module>
+    obj.main()
+  File "d:\code\ai-engineer-project-microsoft\new folder\project\all project\6-a-kidney-disease-classification-deep-learning-project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_01_data_injestion.py", line 13, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "d:\code\ai-engineer-project-microsoft\new folder\project\all project\6-a-kidney-disease-classification-deep-learning-project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\config\configuration.py", line 25, in get_data_ingestion_config
+    data_ingestion_config = DataIngestionConfig(
+TypeError: DataIngestionConfig.__init__() got an unexpected keyword argument 'source_URL'
+[2025-07-23 18:58:05,851: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-07-23 18:58:05,854: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-23 18:58:05,856: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-23 18:58:05,857: INFO: common: created directory at: artifacts]
+[2025-07-23 18:58:05,858: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-07-23 18:58:05,858: ERROR: main: DataIngestionConfig.__init__() got an unexpected keyword argument 'source_URL']
+Traceback (most recent call last):
+  File "D:\code\Ai-engineer-project-microsoft\New folder\Project\All Project\6-a-Kidney-Disease-Classification-Deep-Learning-Project\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 11, in <module>
+    obj.main()
+  File "d:\code\ai-engineer-project-microsoft\new folder\project\all project\6-a-kidney-disease-classification-deep-learning-project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_01_data_injestion.py", line 13, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "d:\code\ai-engineer-project-microsoft\new folder\project\all project\6-a-kidney-disease-classification-deep-learning-project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\config\configuration.py", line 25, in get_data_ingestion_config
+    data_ingestion_config = DataIngestionConfig(
+TypeError: DataIngestionConfig.__init__() got an unexpected keyword argument 'source_URL'
+[2025-07-23 18:58:47,876: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-23 18:58:47,880: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-23 18:58:47,882: INFO: common: created directory at: artifacts]
+[2025-07-23 18:58:47,884: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-07-23 18:58:47,886: INFO: 986331348: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-07-23 18:58:59,176: INFO: 986331348: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-07-23 19:05:16,870: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-07-23 19:05:16,874: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-23 19:05:16,876: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-23 19:05:16,876: INFO: common: created directory at: artifacts]
+[2025-07-23 19:05:16,877: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-07-23 19:05:16,877: ERROR: main: DataIngestionConfig.__init__() got an unexpected keyword argument 'source_URL']
+Traceback (most recent call last):
+  File "D:\code\Ai-engineer-project-microsoft\New folder\Project\All Project\6-a-Kidney-Disease-Classification-Deep-Learning-Project\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 11, in <module>
+    obj.main()
+  File "d:\code\ai-engineer-project-microsoft\new folder\project\all project\6-a-kidney-disease-classification-deep-learning-project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_01_data_injestion.py", line 13, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "d:\code\ai-engineer-project-microsoft\new folder\project\all project\6-a-kidney-disease-classification-deep-learning-project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\config\configuration.py", line 25, in get_data_ingestion_config
+    data_ingestion_config = DataIngestionConfig(
+TypeError: DataIngestionConfig.__init__() got an unexpected keyword argument 'source_URL'
+[2025-07-23 19:05:26,715: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-23 19:05:26,720: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-23 19:05:26,722: INFO: common: created directory at: artifacts]
+[2025-07-23 19:05:26,724: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-07-23 19:05:26,725: INFO: 986331348: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-07-23 19:05:37,723: INFO: 986331348: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-07-23 19:06:04,108: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-23 19:06:04,113: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-23 19:06:04,116: INFO: common: created directory at: artifacts]
+[2025-07-23 19:06:04,119: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-07-23 19:06:04,665: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-07-23 19:06:25,934: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-07-23 19:06:25,939: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-23 19:06:25,941: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-23 19:06:25,943: INFO: common: created directory at: artifacts]
+[2025-07-23 19:06:25,943: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-07-23 19:06:25,944: ERROR: main: DataIngestionConfig.__init__() got an unexpected keyword argument 'source_URL']
+Traceback (most recent call last):
+  File "D:\code\Ai-engineer-project-microsoft\New folder\Project\All Project\6-a-Kidney-Disease-Classification-Deep-Learning-Project\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 11, in <module>
+    obj.main()
+  File "d:\code\ai-engineer-project-microsoft\new folder\project\all project\6-a-kidney-disease-classification-deep-learning-project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_01_data_injestion.py", line 13, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "d:\code\ai-engineer-project-microsoft\new folder\project\all project\6-a-kidney-disease-classification-deep-learning-project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\config\configuration.py", line 25, in get_data_ingestion_config
+    data_ingestion_config = DataIngestionConfig(
+TypeError: DataIngestionConfig.__init__() got an unexpected keyword argument 'source_URL'
+[2025-07-23 19:08:54,240: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-07-23 19:08:54,243: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-23 19:08:54,245: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-23 19:08:54,246: INFO: common: created directory at: artifacts]
+[2025-07-23 19:08:54,246: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-07-23 19:08:54,246: ERROR: main: DataIngestionConfig.__init__() got an unexpected keyword argument 'source_URL']
+Traceback (most recent call last):
+  File "D:\code\Ai-engineer-project-microsoft\New folder\Project\All Project\6-a-Kidney-Disease-Classification-Deep-Learning-Project\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 11, in <module>
+    obj.main()
+  File "d:\code\ai-engineer-project-microsoft\new folder\project\all project\6-a-kidney-disease-classification-deep-learning-project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_01_data_injestion.py", line 13, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "d:\code\ai-engineer-project-microsoft\new folder\project\all project\6-a-kidney-disease-classification-deep-learning-project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\config\configuration.py", line 27, in get_data_ingestion_config
+    data_ingestion_config = DataIngestionConfig(
+TypeError: DataIngestionConfig.__init__() got an unexpected keyword argument 'source_URL'
+[2025-07-23 19:09:26,041: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-07-23 19:09:26,044: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-23 19:09:26,046: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-23 19:09:26,046: INFO: common: created directory at: artifacts]
+[2025-07-23 19:09:26,047: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-07-23 19:09:26,047: ERROR: main: DataIngestionConfig.__init__() got an unexpected keyword argument 'source_URL']
+Traceback (most recent call last):
+  File "D:\code\Ai-engineer-project-microsoft\New folder\Project\All Project\6-a-Kidney-Disease-Classification-Deep-Learning-Project\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 11, in <module>
+    obj.main()
+  File "d:\code\ai-engineer-project-microsoft\new folder\project\all project\6-a-kidney-disease-classification-deep-learning-project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_01_data_injestion.py", line 13, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "d:\code\ai-engineer-project-microsoft\new folder\project\all project\6-a-kidney-disease-classification-deep-learning-project\kidney-disease-classification-deep-learning-project\src\cnnClassifier\config\configuration.py", line 27, in get_data_ingestion_config
+    data_ingestion_config = DataIngestionConfig(
+TypeError: DataIngestionConfig.__init__() got an unexpected keyword argument 'source_URL'
+[2025-07-23 19:12:55,840: INFO: main: >>>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-07-23 19:12:55,843: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-23 19:12:55,845: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-23 19:12:55,846: INFO: common: created directory at: artifacts]
+[2025-07-23 19:12:55,846: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-07-23 19:12:55,846: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-07-23 19:13:07,222: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-07-23 19:13:07,972: INFO: main: >>>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2025-07-23 19:13:07,973: INFO: main: *******************]
+[2025-07-23 19:13:07,973: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2025-07-23 19:13:07,976: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-07-23 19:13:07,978: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-07-23 19:13:07,978: INFO: common: created directory at: artifacts]
+[2025-07-23 19:13:07,979: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-07-23 19:13:08,491: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-07-23 19:13:08,887: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
