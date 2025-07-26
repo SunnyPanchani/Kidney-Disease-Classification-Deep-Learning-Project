@@ -41,7 +41,7 @@ git clone https://github.com/SunnyPanchani/Kidney-Disease-Classification-Deep-Le
 ### STEP 01 - Create a conda environment after opening the repository
 
 ```bash
-conda create -n kidney python=3.9 -y
+conda create -n kidney python=3.10.18 -y
 ```
 
 ```bash
@@ -78,17 +78,29 @@ open up your localhost and port
 
 [dagshub](https://dagshub.com/)
 
-MLFLOW\_TRACKING\_URI=[https://dagshub.com/entbappy/Kidney-Disease-Classification-MLflow-DVC.mlflow](https://dagshub.com/entbappy/Kidney-Disease-Classification-MLflow-DVC.mlflow)&#x20;
-MLFLOW\_TRACKING\_USERNAME=entbappy&#x20;
-MLFLOW\_TRACKING\_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0&#x20;
+MLFLOW\_TRACKING\_URI=[https://dagshub.com/SunnyPanchani/Kidney-Disease-Classification-Deep-Learning-Project.mlflow](https://dagshub.com/SunnyPanchani/Kidney-Disease-Classification-Deep-Learning-Project.mlflow)&#x20;
+MLFLOW\_TRACKING\_USERNAME=SunnyPanchani&#x20;
+MLFLOW\_TRACKING\_PASSWORD=51e674af3ed024048b584380ab52974ad8982d12&#x20;
+
 python script.py
 
 Run this to export as env variables:
 
 ```bash
-export MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/Kidney-Disease-Classification-MLflow-DVC.mlflow
-export MLFLOW_TRACKING_USERNAME=entbappy
-export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
+export MLFLOW_TRACKING_URI=https://dagshub.com/SunnyPanchani/Kidney-Disease-Classification-Deep-Learning-Project.mlflow
+export MLFLOW_TRACKING_USERNAME=SunnyPanchani
+export MLFLOW_TRACKING_PASSWORD=51e674af3ed024048b584380ab52974ad8982d12
+```
+
+✅ Here's how to set your MLflow environment variables correctly in PowerShell:
+powershell
+
+```bash
+$env:MLFLOW_TRACKING_URI = "https://dagshub.com/SunnyPanchani/Kidney-Disease-Classification-Deep-Learning-Project.mlflow"
+$env:MLFLOW_TRACKING_USERNAME = "SunnyPanchani"
+$env:MLFLOW_TRACKING_PASSWORD = "51e674af3ed024048b584380ab52974ad8982d12"
+
+
 ```
 
 ### DVC cmd
