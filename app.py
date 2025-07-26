@@ -1,7 +1,5 @@
 from flask import Flask, request, jsonify, render_template
 import os
-import sys
-sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 from flask_cors import CORS, cross_origin
 from cnnClassifier.utils.common import decodeImage
 

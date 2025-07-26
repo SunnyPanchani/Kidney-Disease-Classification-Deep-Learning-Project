@@ -2286,3 +2286,67 @@ Traceback (most recent call last):
     raise IOError(
 OSError: No file or directory found at model\model.h5
 [2025-07-26 16:38:38,494: INFO: _internal: 192.168.1.3 - - [26/Jul/2025 16:38:38] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-07-26 16:45:01,837: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.3:8080]
+[2025-07-26 16:45:01,838: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-07-26 16:47:13,964: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.3:8080]
+[2025-07-26 16:47:13,965: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-07-26 16:47:38,277: INFO: _internal: 192.168.1.3 - - [26/Jul/2025 16:47:38] "GET / HTTP/1.1" 200 -]
+[2025-07-26 16:47:42,820: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\DELL\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\DELL\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\DELL\anaconda3\envs\kidney\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\DELL\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\DELL\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\DELL\anaconda3\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "D:\code\1-Github\Kidney-Disease-Classification-Deep-Learning-Project\app.py", line 47, in predictRoute
+    result = clApp.classifier.predict()
+  File "d:\code\1-github\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\prediction.py", line 14, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\DELL\anaconda3\envs\kidney\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\DELL\anaconda3\envs\kidney\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\DELL\anaconda3\envs\kidney\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2025-07-26 16:47:42,830: INFO: _internal: 192.168.1.3 - - [26/Jul/2025 16:47:42] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2025-07-26 16:48:44,016: INFO: _internal: 127.0.0.1 - - [26/Jul/2025 16:48:44] "GET / HTTP/1.1" 200 -]
+[2025-07-26 16:48:50,740: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\DELL\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\DELL\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\DELL\anaconda3\envs\kidney\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\DELL\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\DELL\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\DELL\anaconda3\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "D:\code\1-Github\Kidney-Disease-Classification-Deep-Learning-Project\app.py", line 47, in predictRoute
+    result = clApp.classifier.predict()
+  File "d:\code\1-github\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\prediction.py", line 14, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\DELL\anaconda3\envs\kidney\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\DELL\anaconda3\envs\kidney\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\DELL\anaconda3\envs\kidney\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2025-07-26 16:48:50,744: INFO: _internal: 127.0.0.1 - - [26/Jul/2025 16:48:50] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
