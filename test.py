@@ -34,16 +34,18 @@
 
 
 # print("Loading model: model/model.tflite")
-import os
-from src.cnnClassifier.pipeline.prediction import PredictionPipeline
 
-print("Testing prediction pipeline...")
-print("Current directory:", os.getcwd())
 
-# Test with a sample image
-predictor = PredictionPipeline("123.jpg")
-result = predictor.predict()
-print("Prediction result:", result)
+# import os
+# from src.cnnClassifier.pipeline.prediction import PredictionPipeline
+
+# print("Testing prediction pipeline...")
+# print("Current directory:", os.getcwd())
+
+# # Test with a sample image
+# predictor = PredictionPipeline("123.jpg")
+# result = predictor.predict()
+# print("Prediction result:", result)
 
 
 
