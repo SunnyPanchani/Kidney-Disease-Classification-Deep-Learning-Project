@@ -18,13 +18,32 @@
 
 
 
-import sys, os
-sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
-from cnnClassifier.pipeline.prediction import PredictionPipeline
+# import sys, os
+# sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
+# from cnnClassifier.pipeline.prediction import PredictionPipeline
+
+# from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
+# datagen = ImageDataGenerator(rescale=1./255)
+# gen = datagen.flow_from_directory("artifacts/data_ingestion/kidney-ct-scan-image", target_size=(224,224))
+
+# print(gen.class_indices)
+
+# print("Image shape:", img_array.shape)
+# print("Model output:", output_data)
 
 
+# print("Loading model: model/model.tflite")
+import os
+from src.cnnClassifier.pipeline.prediction import PredictionPipeline
 
+print("Testing prediction pipeline...")
+print("Current directory:", os.getcwd())
 
+# Test with a sample image
+predictor = PredictionPipeline("123.jpg")
+result = predictor.predict()
+print("Prediction result:", result)
 
 
 

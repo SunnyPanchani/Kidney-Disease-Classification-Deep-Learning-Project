@@ -88,6 +88,19 @@ $env:MLFLOW_TRACKING_PASSWORD = "51e674af3ed024048b584380ab52974ad8982d12"
 
 ```
 
+## Colab Experiments
+
+If you’re using a slow computer or want to quickly experiment with hyperparameters and get the best model:
+
+Run in Google Colab
+Use the pre-written notebooks available in the colab-note/ folder:
+
+colab-note/kidney_classification.ipynb: Jupyter notebook for step-by-step execution
+
+colab-note/kidney_classification.py: Python script version
+
+These files are optimized to help tune your model's learning rate, optimizer, activation, and batch size in a fast and reproducible way.
+
 ### DVC cmd
 
 1. dvc init
@@ -134,7 +147,7 @@ $env:MLFLOW_TRACKING_PASSWORD = "51e674af3ed024048b584380ab52974ad8982d12"
 
 ## 3. Create ECR repo to store/save Docker image
 
-* Save the URI: `566373416292.dkr.ecr.us-east-1.amazonaws.com/kidney`
+* Save the URI: `516273416492.dkr.ecr.us-east-1.amazonaws.com/kidney`
 
 ## 4. Create EC2 machine (Ubuntu)
 
@@ -158,12 +171,18 @@ Settings > Actions > Runner > New self-hosted runner > Choose OS > Run commands 
 ```
 AWS_ACCESS_KEY_ID=
 AWS_SECRET_ACCESS_KEY=
-AWS_REGION=us-east-1
-AWS_ECR_LOGIN_URI=566373416292.dkr.ecr.us-east-1.amazonaws.com
+AWS_REGION=
+AWS_ECR_LOGIN_URI=
 ECR_REPOSITORY_NAME=kidney
 ```
 
 ---
 
-Maintainer: [Sunny Panchani](mailto:sunnypanchani9007@gmail.com)
-GitHub: [SunnyPanchani](https://github.com/SunnyPanchani)
+# Maintainer
+Sunny Panchani
+
+📧 sunnypanchani9007@gmail.com
+
+🌐 GitHub: [SunnyPanchani](https://github.com/SunnyPanchani)
+ 
+

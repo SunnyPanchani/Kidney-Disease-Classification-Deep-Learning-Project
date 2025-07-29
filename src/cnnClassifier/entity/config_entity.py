@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Optional
 
 @dataclass(frozen=True)
 class DataIngestionConfig:
@@ -20,6 +21,9 @@ class PrepareBaseModelConfig:
     params_include_top: bool
     params_weights: str
     params_classes: int
+    params_optimizer: str
+    params_activation: str
+    params_freeze_till: Optional[int]
 
 
 @dataclass(frozen=True)
